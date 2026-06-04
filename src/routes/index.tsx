@@ -337,28 +337,51 @@ function Portfolio() {
               </div>
 
               <div className="md:col-span-2">
-                <div className="relative aspect-square rounded-2xl glass overflow-hidden p-6 flex items-center justify-center">
+                <div className="relative aspect-square rounded-2xl glass overflow-hidden p-3">
                   <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-                  <div className="relative grid grid-cols-3 gap-2 w-full">
-                    {Array.from({ length: 9 }).map((_, i) => (
-                      <motion.div
-                        key={i}
-                        animate={{ y: [0, -6, 0], opacity: [0.5, 1, 0.5] }}
-                        transition={{
-                          duration: 2 + (i % 3),
-                          repeat: Infinity,
-                          delay: i * 0.15,
-                        }}
-                        className="aspect-square rounded-lg bg-gradient-primary/40 glass"
-                      />
-                    ))}
-                  </div>
+                  <motion.img
+                    key={shot1.url}
+                    src={shot1.url}
+                    alt="InCreEdu learner login"
+                    loading="lazy"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="relative h-full w-full object-cover object-top rounded-xl"
+                  />
                   <div className="absolute bottom-4 left-4 right-4 glass-strong rounded-xl px-3 py-2 text-xs flex items-center justify-between">
                     <span className="font-mono">incre-edu.app</span>
                     <span className="h-2 w-2 rounded-full bg-green-400" />
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Screenshot gallery */}
+            <div className="relative mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+              {increeduShots.map((s, i) => (
+                <motion.a
+                  key={s.src}
+                  href={s.src}
+                  target="_blank"
+                  rel="noreferrer"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.06 }}
+                  whileHover={{ y: -4 }}
+                  className="group block glass rounded-2xl overflow-hidden glow-ring"
+                >
+                  <div className="aspect-[4/5] overflow-hidden bg-black/20">
+                    <img
+                      src={s.src}
+                      alt={`InCreEdu — ${s.caption}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="px-4 py-3 text-xs text-muted-foreground">{s.caption}</div>
+                </motion.a>
+              ))}
             </div>
           </div>
         </TiltCard>
