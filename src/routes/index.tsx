@@ -24,6 +24,21 @@ import { Avatar3D } from "@/components/portfolio/Avatar3D";
 import { Section } from "@/components/portfolio/Section";
 import { TiltCard } from "@/components/portfolio/TiltCard";
 import resume from "@/assets/resume.pdf.asset.json";
+import shot1 from "@/assets/increedu-image.png.asset.json";
+import shot2 from "@/assets/increedu-image-2.png.asset.json";
+import shot3 from "@/assets/increedu-image-3.png.asset.json";
+import shot4 from "@/assets/increedu-image-4.png.asset.json";
+import shot5 from "@/assets/increedu-image-5.png.asset.json";
+import shot6 from "@/assets/increedu-image-6.png.asset.json";
+
+const increeduShots = [
+  { src: shot1.url, caption: "Learner login & adaptive landing" },
+  { src: shot2.url, caption: "Interest assessment flow" },
+  { src: shot3.url, caption: "Personalized learning paths" },
+  { src: shot4.url, caption: "Mentor connections & milestones" },
+  { src: shot5.url, caption: "Teacher dashboard & course upload" },
+  { src: shot6.url, caption: "Admin dashboard & analytics" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
