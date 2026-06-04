@@ -1,20 +1,25 @@
 # Vinnu Visions Portfolio
 
-A personal portfolio website showcasing my projects, skills, and experience.
+My personal portfolio website showcasing my projects, skills, and experience.
 
-## Live Demo
+## Live Website
 
-🌐 [Visit My Portfolio](https://vinnu-visions-portfolio.vercel.app)
+🌐 [Visit My Portfolio](https://vinnu-visions-portfolio.lovable.app/)
 
-## Technologies Used
+## Features
+
+- Responsive Design
+- Project Showcase
+- Skills Section
+- Contact Form
+
+## Tech Stack
 
 - React
-- JavaScript
-- CSS
-- Vercel
+- TypeScript
+- Tailwind CSS
+- Lovable
 
-## Installation
+## Author
 
-```bash
-npm install
-npm run dev
+Vinnu Battu
