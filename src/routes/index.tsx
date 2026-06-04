@@ -191,26 +191,38 @@ function Portfolio() {
       >
         <div className="grid md:grid-cols-3 gap-5">
           <TiltCard className="md:col-span-2">
-            <div className="glass-strong rounded-3xl p-8 h-full glow-ring">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="rounded-xl bg-gradient-primary p-2.5 shadow-glow">
-                  <GraduationCap className="h-5 w-5 text-primary-foreground" />
+            <div className="glass-strong rounded-3xl p-6 md:p-8 h-full glow-ring">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <div className="relative shrink-0 mx-auto sm:mx-0">
+                  <div className="absolute -inset-1 rounded-2xl bg-gradient-primary opacity-60 blur-md" />
+                  <img
+                    src={vinnuPhoto.url}
+                    alt="Vinnu Battu portrait"
+                    className="relative h-36 w-36 sm:h-40 sm:w-40 rounded-2xl object-cover ring-1 ring-white/15"
+                  />
                 </div>
-                <h3 className="font-display text-xl font-semibold">B.Tech in Computer Science Engineering</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                I'm currently pursuing my undergraduate degree with a strong academic record
-                <span className="text-foreground font-medium"> (CGPA 8.7/10)</span>. My focus is on
-                full-stack engineering with the MERN stack, sharpening DSA fundamentals daily on
-                LeetCode and CodeChef, and shipping projects that combine clean architecture with
-                great user experience.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {["MERN", "DSA", "OOP", "DBMS", "REST APIs", "Git"].map((t) => (
-                  <span key={t} className="rounded-full glass px-3 py-1 text-xs">
-                    {t}
-                  </span>
-                ))}
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="rounded-xl bg-gradient-primary p-2.5 shadow-glow">
+                      <GraduationCap className="h-5 w-5 text-primary-foreground" />
+                    </div>
+                    <h3 className="font-display text-lg md:text-xl font-semibold">B.Tech in Computer Science Engineering</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    I'm currently pursuing my undergraduate degree with a strong academic record
+                    <span className="text-foreground font-medium"> (CGPA 8.7/10)</span>. My focus is on
+                    full-stack engineering with the MERN stack, sharpening DSA fundamentals daily on
+                    LeetCode and CodeChef, and shipping projects that combine clean architecture with
+                    great user experience.
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {["MERN", "DSA", "OOP", "DBMS", "REST APIs", "Git"].map((t) => (
+                      <span key={t} className="rounded-full glass px-3 py-1 text-xs">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </TiltCard>
