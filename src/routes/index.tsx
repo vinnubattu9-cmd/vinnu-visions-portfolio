@@ -30,6 +30,7 @@ import shot3 from "@/assets/increedu-image-3.png.asset.json";
 import shot4 from "@/assets/increedu-image-4.png.asset.json";
 import shot5 from "@/assets/increedu-image-5.png.asset.json";
 import shot6 from "@/assets/increedu-image-6.png.asset.json";
+import vinnuPhoto from "@/assets/vinnu.png.asset.json";
 
 const increeduShots = [
   { src: shot1.url, caption: "Learner login & adaptive landing" },
