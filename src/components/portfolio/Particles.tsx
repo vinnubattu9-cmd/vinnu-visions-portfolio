@@ -35,7 +35,7 @@ export function Particles() {
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, 80%, 70%, 0.55)`;
+        ctx.fillStyle = `hsla(${p.hue}, 70%, 65%, 0.5)`;
         ctx.fill();
       });
       // connections
