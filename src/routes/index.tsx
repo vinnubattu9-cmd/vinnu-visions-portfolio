@@ -157,11 +157,12 @@ function Portfolio() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:scale-105 transition-transform"
+                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-primary animate-gradient px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:scale-105 transition-transform animate-glow-sweep"
               >
                 View Projects
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
+
               <a
                 href={resume.url}
                 download
