@@ -23,7 +23,7 @@ export function Particles() {
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
       r: Math.random() * 1.8 + 0.4,
-      hue: Math.random() > 0.5 ? 75 : 45,
+      hue: Math.random() > 0.5 ? 200 : 190,
     }));
 
     const tick = () => {
@@ -45,7 +45,7 @@ export function Particles() {
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < 120) {
-            ctx.strokeStyle = `hsla(60, 70%, 65%, ${0.12 * (1 - d / 120)})`;
+            ctx.strokeStyle = `hsla(200, 70%, 65%, ${0.12 * (1 - d / 120)})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
