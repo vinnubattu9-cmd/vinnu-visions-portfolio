@@ -23,7 +23,7 @@ export function Particles() {
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
       r: Math.random() * 1.8 + 0.4,
-      hue: Math.random() > 0.5 ? 265 : 295,
+      hue: Math.random() > 0.5 ? 75 : 45,
     }));
 
     const tick = () => {
@@ -35,7 +35,7 @@ export function Particles() {
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${p.hue}, 80%, 70%, 0.55)`;
+        ctx.fillStyle = `hsla(${p.hue}, 70%, 65%, 0.5)`;
         ctx.fill();
       });
       // connections
@@ -45,7 +45,7 @@ export function Particles() {
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < 120) {
-            ctx.strokeStyle = `hsla(280, 80%, 70%, ${0.12 * (1 - d / 120)})`;
+            ctx.strokeStyle = `hsla(60, 70%, 65%, ${0.12 * (1 - d / 120)})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);

@@ -141,10 +141,11 @@ function Portfolio() {
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               <span className="text-muted-foreground">Available for internships · 2026</span>
             </div>
-            <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              <span className="block">VINNU</span>
-              <span className="block text-gradient">BATTU</span>
+            <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
+              <span className="block italic font-medium opacity-90">Vinnu</span>
+              <span className="block text-gradient animate-gradient">BATTU</span>
             </h1>
+
             <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-lg">
               Computer Science Engineering Student · Full Stack Developer · Competitive Programmer
             </p>
@@ -156,11 +157,12 @@ function Portfolio() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:scale-105 transition-transform"
+                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-primary animate-gradient px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:scale-105 transition-transform animate-glow-sweep"
               >
                 View Projects
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
+
               <a
                 href={resume.url}
                 download
