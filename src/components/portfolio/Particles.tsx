@@ -45,7 +45,7 @@ export function Particles() {
           const dx = a.x - b.x, dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < 120) {
-            ctx.strokeStyle = `hsla(280, 80%, 70%, ${0.12 * (1 - d / 120)})`;
+            ctx.strokeStyle = `hsla(60, 70%, 65%, ${0.12 * (1 - d / 120)})`;
             ctx.lineWidth = 0.6;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
