@@ -141,10 +141,11 @@ function Portfolio() {
               <Sparkles className="h-3.5 w-3.5 text-primary" />
               <span className="text-muted-foreground">Available for internships · 2026</span>
             </div>
-            <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              <span className="block">VINNU</span>
-              <span className="block text-gradient">BATTU</span>
+            <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight">
+              <span className="block italic font-medium opacity-90">Vinnu</span>
+              <span className="block text-gradient animate-gradient">BATTU</span>
             </h1>
+
             <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-lg">
               Computer Science Engineering Student · Full Stack Developer · Competitive Programmer
             </p>
