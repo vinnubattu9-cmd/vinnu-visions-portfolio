@@ -23,7 +23,7 @@ export function Particles() {
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
       r: Math.random() * 1.8 + 0.4,
-      hue: Math.random() > 0.5 ? 265 : 295,
+      hue: Math.random() > 0.5 ? 75 : 45,
     }));
 
     const tick = () => {
